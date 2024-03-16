@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html{
+    font-size: 10px;
+}
+
+.container{
+    width: 100rem;
+    padding: 2rem;
+    margin: 15rem auto 0 auto;
+    background: #eee;
+}
+
+.grid-system{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2rem;
+}
+
+.Card{
+    background: #fff;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.Card ul{
+    list-style: none;
+}
+
+.Card h1 ,
+.Card p ,
+.Card ul li{    
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 3rem 0;
+}
+.Card h1{
+    font-size: 3rem;
+}
+.Card p{
+    font-size: 2.5rem;
+    color: #197BEB;
+}
+.Card p::after{
+    content: '/Mo';
+    color: #777;
+    font-size: 1.5rem;
+}
+.Card ul li{
+    font-size: 1rem;
+    color: #888;
+    margin: 1.5rem 0;
+}
+.Card a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #197BEB;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.Card .Most-popular{
+    width: 95%;
+    font-size: 1.8rem;
+    background-color: #197BEB;
+    color: #fff;
+    padding: 0.5rem;
+    position: absolute;
+    top: -1.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.Card .Most-popular::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 1rem;
+    border-style: solid;
+    border-color: transparent blue transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: -1.9rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.Card .Most-popular::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 1rem;
+    border-style: solid;
+    border-color: transparent transparent transparent blue;
+    position: absolute;
+    top: 50%;
+    right: -1.9rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
